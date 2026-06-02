@@ -163,16 +163,13 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Ez a konténer lesz a csúszka helye. Egyelőre egy letisztult placeholder, amit a következő lépésben feltöltünk az interaktív Swiper/Slider kóddal */}
+          {/* Ez a konténer lesz a csúszka helye. Egyelőre egy letisztult placeholder, amit a következő lépésben feltöltünk az interaktív Swiper/Slider kóddal          */}
+
           <div className="w-full h-80 md:h-[450px] rounded-2xl bg-muted border border-foreground/5 flex items-center justify-center relative overflow-hidden group shadow-inner">
             <div className="text-center p-6 space-y-2">
               <div className="text-accent text-sm font-mono tracking-wider">
                 [ INTERAKTIVER BEFORE/AFTER CAROUSEL PLACEHOLDER ]
               </div>
-              <p className="text-xs text-foreground/50 max-w-md mx-auto">
-                Ide fogjuk behúzni a csúsztatható kép-komponenst, ahol az ügyfél
-                látja majd a falfelújítások és a famunkák precizitását.
-              </p>
             </div>
           </div>
         </div>
