@@ -63,18 +63,20 @@ export default function Home() {
       >
         <div className="text-center sm:text-left">
           <h2 className="text-3xl font-extrabold tracking-tight">
-            Fokusierte Spezialisierungen
+            Fokussierte Spezialisierungen
           </h2>
           <p className="text-foreground/60 mt-2">
             Präzisionsarbeit für anspruchsvolle Wohnkonzepte
           </p>
         </div>
 
-        {/* BENTO GRID / LEISTUNGEN KÁRTYÁK */}
+        {/* BENTO GRID / LEISTUNGEN KÁRTYÁK (EMOJIK NÉLKÜL, MINIMÁL STÍLUSBAN) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Wand- & Spachtelreparaturen (Perfekte Oberflächen) */}
-          <div className="p-8 rounded-2xl bg-muted border border-foreground/5 space-y-4 shadow-sm">
-            <div className="text-2xl">🪄</div>
+          {/* 01. Wand- & Spachtelreparaturen */}
+          <div className="p-8 rounded-2xl bg-muted border border-foreground/5 space-y-3 shadow-sm">
+            <span className="text-xs font-mono text-accent font-bold tracking-widest uppercase block">
+              [ 01 . WAND ]
+            </span>
             <h3 className="text-xl font-bold">
               Perfekte Wand- & Spachtelarbeiten
             </h3>
@@ -91,9 +93,12 @@ export default function Home() {
               <li>• Präzise Beiarbeiten nach Elektriker- oder Stemmarbeiten</li>
             </ul>
           </div>
-          {/* Exklusive Holzreparatur & Smart Repair */}
-          <div className="p-8 rounded-2xl bg-muted border border-foreground/5 space-y-4 shadow-sm">
-            <div className="text-2xl">🪵</div>
+
+          {/* 02. Exklusive Holzreparatur */}
+          <div className="p-8 rounded-2xl bg-muted border border-foreground/5 space-y-3 shadow-sm">
+            <span className="text-xs font-mono text-accent font-bold tracking-widest uppercase block">
+              [ 02 . HOLZ ]
+            </span>
             <h3 className="text-xl font-bold">Holzreparatur & Smart Repair</h3>
             <p className="text-sm text-foreground/70">
               Rettung statt Entsorgung von historischen oder hochwertigen
@@ -105,7 +110,7 @@ export default function Home() {
                 Haustiere)
               </li>
               <li>
-                • Wiederherstellung von zersplitterten oder ausgebrochenen
+                • Wiederherstellung von zersplitterten vagy ausgebrochenen
                 Holzelementen
               </li>
               <li>
@@ -119,9 +124,11 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* Fugenloses Mikrozement */}
-          <div className="p-8 rounded-2xl bg-muted border border-foreground/5 space-y-4 shadow-sm md:col-span-2">
-            <div className="text-2xl">✨</div>
+          {/* 03. Fugenloses Mikrozement */}
+          <div className="p-8 rounded-2xl bg-muted border border-foreground/5 space-y-3 shadow-sm md:col-span-2">
+            <span className="text-xs font-mono text-accent font-bold tracking-widest uppercase block">
+              [ 03 . DESIGN ]
+            </span>
             <h3 className="text-xl font-bold">
               Exklusiver Mikrozement (Mikrozement-Beschichtungen)
             </h3>
@@ -144,6 +151,32 @@ export default function Home() {
             </ul>
           </div>
         </div>
+
+        {/* --- IDE JÖN A CAROUSEL / BEFORE-AFTER SLIDER --- */}
+        <div className="pt-8">
+          <div className="text-center md:text-left mb-6">
+            <h3 className="text-xl font-bold tracking-tight">
+              Ergebnisse, die für sich sprechen
+            </h3>
+            <p className="text-sm text-foreground/60">
+              Echte Vorher-Nachher Aufnahmen meiner Arbeiten in Wien
+            </p>
+          </div>
+
+          {/* Ez a konténer lesz a csúszka helye. Egyelőre egy letisztult placeholder, amit a következő lépésben feltöltünk az interaktív Swiper/Slider kóddal */}
+          <div className="w-full h-80 md:h-[450px] rounded-2xl bg-muted border border-foreground/5 flex items-center justify-center relative overflow-hidden group shadow-inner">
+            <div className="text-center p-6 space-y-2">
+              <div className="text-accent text-sm font-mono tracking-wider">
+                [ INTERAKTIVER BEFORE/AFTER CAROUSEL PLACEHOLDER ]
+              </div>
+              <p className="text-xs text-foreground/50 max-w-md mx-auto">
+                Ide fogjuk behúzni a csúsztatható kép-komponenst, ahol az ügyfél
+                látja majd a falfelújítások és a famunkák precizitását.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* --- CAROUSEL VÉGE --- */}
       </section>
 
       {/* ANFRAGE PROCESS */}
@@ -184,7 +217,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="py-8 px-6 border-t border-foreground/5 text-center text-xs text-foreground/40 max-w-5xl mx-auto w-full">
         <p>
-          © {new Date().getFullYear()} Wohnungreparatur Wien. Ästhetische
+          © {new Date().getFullYear()} Wohnungsreparatur Wien. Ästhetische
           Oberflächenrekonstruktion.
         </p>
       </footer>
