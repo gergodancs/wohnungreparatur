@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  /* Világos mód - Tiszta, bizalomgerjesztő alapok */
-  --background: #f8fafc; /* Nagyon halvány szürke, tisztább érzet mint a sima fehér */
-  --foreground: #0f172a; /* Mély sötétkék (Slate-900), profibb mint a koromfekete */
+  /* Fixen a sötét mód színei mindenkinek */
+  --background: #020617; /* Mély éjszakai kék */
+  --foreground: #f1f5f9; /* Világos szöveg */
 
   /* Egyedi márkaszínek */
-  --color-primary: #1e293b; /* Fő szín: Sötét pala */
-  --color-accent: #059669; /* Kiemelés: Smaragd zöld (a bizalom és a WhatsApp színe) */
-  --color-gold: #d97706; /* Másodlagos kiemelés: Meleg okker a minőség jelzésére */
+  --color-primary: #f1f5f9;
+  --color-accent: #059669; /* Smaragd zöld */
+  --color-gold: #d97706; /* Meleg okker */
 }
 
 @theme inline {
@@ -21,24 +21,13 @@
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui;
   --font-mono: var(--font-geist-mono);
 
-  /* Extra: Finomabb lekerekítések definiálása */
   --radius-xl: 1rem;
   --radius-2xl: 1.5rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Sötét mód - Elegáns, de nem teljesen fekete */
-    --background: #020617; /* Mély éjszakai kék */
-    --foreground: #f1f5f9;
-    --color-primary: #f1f5f9;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  /* A font-family-t hagyd a Geist-en, sokkal modernebb mint az Arial! */
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
